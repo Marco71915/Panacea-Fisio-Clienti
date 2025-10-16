@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appuntamenti Cliente</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f8f8f8; }
+        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 400px; margin: auto; text-align: center; }
+        h1 { color: #333; }
+        ul { padding-left: 20px; text-align: left; }
+        input { padding: 8px; width: 80%; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc; }
+        button { padding: 8px 16px; border-radius: 5px; border: none; background-color: #333; color: white; cursor: pointer; }
+        button:hover { background-color: #555; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Benvenuto!</h1>
+        <p>Inserisci il tuo ID stampato sulla Card:</p>
+        <input type="text" id="inputID" placeholder="Es. 1, 2, 3...">
+        <br>
+        <button id="cerca">Mostra i miei Appuntamenti</button>
+
+        <h2 id="nome-cliente" style="margin-top:20px;"></h2>
+        <ul id="lista-appuntamenti"></ul>
+    </div>
+
+    <script src="clienti.js"></script>
+</body>
+</html>
